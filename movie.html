@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="carousel.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="carousel.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;800;900&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;800;900&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
     <title>Movie</title>
-</head>
-<body id="body">
+  </head>
+  <body id="body">
     <div class="error-container" id="error-container"></div>
     <header class="hero">
-    <nav class="nav container" id="nav">
+      <nav class="nav container" id="nav">
         <h2 class="nav-logo">TuLogo</h2>
         <div class="nav-links">
-            <form class="input" ><input type="text"  placeholder="search" id="search_bar"/>
-                <button class="btn btn_search" id="btn_search" type="submit">Search</button>
-            </form>
-        <ul >
+          <form class="input">
+            <input type="text" placeholder="search" id="search_bar" />
+            <button class="btn btn_search" id="btn_search" type="submit">
+              Search
+            </button>
+          </form>
+          <ul>
             <li class="nav-itemColor">
-                <a href="#" class="nav-link1" >Home</a>
+              <a href="#" class="nav-link1">Home</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link2">Movie</a>
+              <a href="#" class="nav-link2">Movie</a>
             </li>
-            
+
             <li class="nav-item">
-                <a href="#" class="nav-link3">Categorie</a>
-                <!--<ul class="menu_nesting">
+              <a href="#" class="nav-link3">Categorie</a>
+              <!--<ul class="menu_nesting">
                     <li class="menu_inside">
                         <a href="#" class="menu_link menu_link--inside">Popular</a>
                     </li>
@@ -58,63 +67,67 @@
                 </ul>-->
             </li>
 
-
             <li class="nav-item">
-                <a href="#" class="nav-link4">Serie</a>
+              <a href="#" class="nav-link4">Serie</a>
             </li>
-        </ul>
-        
-    </div>
+          </ul>
+        </div>
         <a href="#" class="nav-burger">
-            <img src="./burger.png"  alt="nav_icon"></a>
+          <img src="/images/burger.png" alt="nav_icon"
+        /></a>
         <a href="#" class="nav-close">
-            <img src="./close.png" alt="nav_icon_close"></a>
-    </nav>
-    
+          <img src="/images/close.png" alt="nav_icon_close"
+        /></a>
+      </nav>
     </header>
 
     <main class="main">
+      <button class="btn-light">
+        <img src="/images/day.svg" alt="" class="day" />
+        <!-- <img src="./night.svg" alt="" class="night" /> -->
+      </button>
 
-        <button class="btn-light">
-            <img src="./day.svg" alt="" class="day">
-            <img src="./night.svg" alt="" class="night">
-        </button>
-        
-        <section>
-            <template class="carousel-template" id="carousel-template">
-                <div class="carousel-caption text-start">
-                <h1>Example headline.</h1>
-                <p>Some representative placeholder content for the first slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-                </div>
-            </template>
+      <section>
+        <template class="carousel-template" id="carousel-template">
+          <div class="carousel-caption text-start">
+            <h1>Example headline.</h1>
+            <p>
+              Some representative placeholder content for the first slide of the
+              carousel.
+            </p>
+            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+          </div>
+        </template>
 
-            <template class="error-template">
-                <div class="alert alert-danger alert-error mb-0 alert-dismissible fade show" role="alert">
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-            </template>
-        </section>
-        <h3 id="subTittle">Recent</h3>
-        <div class="main_container" id="main_container">
-            
-        </div>
+        <template class="error-template">
+          <div
+            class="alert alert-danger alert-error mb-0 alert-dismissible fade show"
+            role="alert"
+          >
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="alert"
+              aria-label="Close"
+            ></button>
+          </div>
+        </template>
+      </section>
+      <h3 id="subTittle">Recent</h3>
+      <div class="main_container" id="main_container"></div>
 
-        <div class="btns">
-            <button id="back-button">back</button>
-            <button id="next-button">next</button>
-
-        </div>
-        
+      <div class="btns">
+        <button id="back-button">back</button>
+        <button id="next-button">next</button>
+      </div>
     </main>
 
-    
     <script src="index.js" type="module"></script>
 
     <footer class="footer">
-        <div class="footer_container">
-            <h3 class="copyright">Copyright © 2023 MOVIE. All rights reserved.</h3>
-        </div>
+      <div class="footer_container">
+        <h3 class="copyright">Copyright © 2023 MOVIE. All rights reserved.</h3>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

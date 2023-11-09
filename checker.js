@@ -1,4 +1,6 @@
 
+// THIS CLASS IS FOR SEARCH
+
 export default class Checker {
     inputValue = document.getElementById("search_bar");
     name = this.inputValue.value
