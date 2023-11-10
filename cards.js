@@ -76,7 +76,7 @@ export default class Cards {
                         }
                     });
                     //
-                    posterContainer.innerHTML = "";
+                    
                     // Resto del código para mostrar la información en el modal
 
                     infMovie += `<div class="showMovieInfContainer">
@@ -106,6 +106,7 @@ export default class Cards {
                     posterContainer.style.display = "none";
                     closeBtn.style.display = "none"
                     ShowandHiddeCards.style.display = "block"
+                    posterContainer.innerHTML = "";
                 });
             // Asociar el evento de clic al póster
             poster.addEventListener('click',  ()=>{
