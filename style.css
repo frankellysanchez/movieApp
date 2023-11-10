@@ -10,8 +10,78 @@
 
     body{
         background-color:#1D1D1E;
-        
     }
+    .ShowandHiddeCards{
+        display: block;
+    }
+
+    .pruebadeestilos{
+        display: none;
+        color: white;
+        z-index: 0;
+        
+       }
+       .showMovieInfContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 20px 0;
+       }
+
+       .imgContainer{
+        margin: 10px auto;
+        overflow: hidden;
+        border-radius: 20px;
+        width: 90%;
+        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+           
+       }
+       .infContainer{
+        display: flex;
+        justify-content: start;
+        justify-items: start;
+        margin: auto;
+       }
+       .date{
+        margin-right:15px;
+       }
+
+       .reviewContainer{
+        width: 80%;
+        margin: 10px auto;
+       }
+
+       .reviewContainer h1{
+        font-family: 'Montserrat', sans-serif
+       }
+       
+
+       .trailerContainer{
+        margin:  10px auto;
+        width: 90%;
+        height: 200px;
+        border-radius: 20px;
+        overflow: hidden;
+       }
+       .closeBtn{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50px;
+        height: 50px;
+        z-index: 10;
+        display: none;
+       }
+   
+       
+
+       .main{
+        position: relative;
+       }
+
+    
 .container{
     margin: 0 auto;
     width: 90%;
@@ -539,6 +609,8 @@ transition: all 0.3s linear;
         background-color:#1D1D1E;
         margin: auto;
     }
+    
+    
 
     .bodyColor{
         background-color: white;
@@ -662,7 +734,7 @@ transition: all 0.3s linear;
     
     .main{
         margin: 0;
-        
+        position: relative;
     }
     h3{
         font-size: 20px;
