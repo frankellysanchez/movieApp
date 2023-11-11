@@ -15,6 +15,8 @@ export default class Dack {
         const search_bar = document.getElementById("search_bar");
         const day =  document.querySelector(".day");
         const night =document.querySelector(".night");
+        const navImmages = document.querySelector(".nav_images");
+        const showMovieInfContainer = document.querySelector(".showMovieInfContainer");
         
         darkBtn.addEventListener('click', () => { 
             body.classList.toggle("bodyColor");
@@ -30,6 +32,8 @@ export default class Dack {
             search_bar.classList.toggle("search_barColor");
             darkBtn.classList.toggle("btn-dark");
             day.classList.toggle("day2");
+            navImmages.classList.toggle("navBurgerColor")
+            showMovieInfContainer.classList.toggle("showMovieInfContainerColor")
         })
         
     }

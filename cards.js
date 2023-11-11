@@ -76,7 +76,7 @@ export default class Cards {
                         }
                     });
                     //
-                    
+                    posterContainer.innerHTML = "";
                     // Resto del código para mostrar la información en el modal
 
                     infMovie += `<div class="showMovieInfContainer">
@@ -84,12 +84,13 @@ export default class Cards {
                                             <img src="${IMG_URL}${movie.backdrop_path}" width="100%" height="100%">
                                         </div>
                                         <div class="infContainer">
-                                            <p class="date">Date: ${movie.release_date}</p>
-                                            <p>Language: ${movie.original_language}</p>
+                                        <h1>${movie.title}</h1>
+                                            <p class="date"><strong>Date:</strong> ${movie.release_date}</p>
+                                            <p><strong>Language:</strong> ${movie.original_language}</p>
                                         </div>
                                         <div class="reviewContainer">
-                                            <h1>${movie.title}</h1>
-                                            <p>Overview <br/>${movie.overview}</p>
+                                            
+                                            <p><strong>Overview</strong> <br/>${movie.overview}</p>
                                         </div>
                                         <div class="trailerContainer">
                                             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/${key}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -106,14 +107,13 @@ export default class Cards {
                     posterContainer.style.display = "none";
                     closeBtn.style.display = "none"
                     ShowandHiddeCards.style.display = "block"
-                    posterContainer.innerHTML = "";
                 });
             // Asociar el evento de clic al póster
             poster.addEventListener('click',  ()=>{
                 ShowandHiddeCards.style.display = "none"
                 closeBtn.style.display = "block"
                 posterContainer.style.display = "block" 
-                handlePosterClick();
+                handlePosterClick()
             });
         });
     }
