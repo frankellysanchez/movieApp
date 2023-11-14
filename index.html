@@ -81,57 +81,42 @@
     </header>
 
     <main class="main" id="main">
-      <div class="closeBtn" id="closeBtn">
-        <?xml version="1.0" encoding="utf-8"?>
-        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-        <svg
-          width="100%"
-          height="100%"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g id="style=linear">
-            <g id="close">
-              <path
-                id="vector"
-                d="M6.75024 6.74512L17.2551 17.25"
-                stroke="#ffffff"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              />
-              <path
-                id="vector_2"
-                d="M17.255 6.74512L6.75006 17.2499"
-                stroke="#ffffff"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              />
+      <div class="btnContainerClose">
+        <div class="closeBtn" id="closeBtn">
+          <?xml version="1.0" encoding="utf-8"?>
+          <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+          <svg
+            width="100%"
+            height="100%"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="style=linear">
+              <g id="close">
+                <path
+                  id="vector"
+                  d="M6.75024 6.74512L17.2551 17.25"
+                  stroke="#ffffff"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  id="vector_2"
+                  d="M17.255 6.74512L6.75006 17.2499"
+                  stroke="#ffffff"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </g>
             </g>
-          </g>
-        </svg>
+          </svg>
+        </div>
+        <div id="posterContainer" class="pruebadeestilos"></div>
       </div>
-      <div id="posterContainer" class="pruebadeestilos"></div>
+
       <div id="ShowandHiddeCards">
-        <!-- <button class="btn-light">
-          <img src="images/day.svg" alt="" class="day" />
-          <img src="./night.svg" alt="" class="night" />
-        </button> -->
-
         <section>
-          <template class="carousel-template" id="carousel-template">
-            <div class="carousel-caption text-start">
-              <h1>Example headline.</h1>
-              <p>
-                Some representative placeholder content for the first slide of
-                the carousel.
-              </p>
-              <p>
-                <a class="btn btn-lg btn-primary" href="#">Sign up today</a>
-              </p>
-            </div>
-          </template>
-
           <template class="error-template">
             <div
               class="alert alert-danger alert-error mb-0 alert-dismissible fade show"
@@ -147,6 +132,12 @@
           </template>
         </section>
         <h3 id="subTittle">Recent</h3>
+        <div class="containerOfBtnlight">
+          <button class="btn-light">
+            <img src="images/day.svg" alt="" class="day" />
+            <!-- <img src="./night.svg" alt="" class="night" /> -->
+          </button>
+        </div>
         <div class="main_container" id="main_container"></div>
 
         <div class="btns">
@@ -157,7 +148,6 @@
     </main>
 
     <script src="index.js" type="module"></script>
-
     <footer class="footer">
       <div class="footer_container">
         <h3 class="copyright">Copyright © 2023 MOVIE. All rights reserved.</h3>
