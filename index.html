@@ -37,46 +37,11 @@
               Search
             </button>
           </form>
-          <ul>
-            <!-- <li class="nav-itemColor">
-              <a href="#main" class="nav-link1">Home</a>
-            </li> -->
-            <!-- <li class="nav-item">
-              <a href="#" class="nav-link2">Movie</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#" class="nav-link3">Categorie</a> -->
-            <!--<ul class="menu_nesting">
-                    <li class="menu_inside">
-                        <a href="#" class="menu_link menu_link--inside">Popular</a>
-                    </li>
-
-                    <li class="menu_inside">
-                        <a href="#" class="menu_link menu_link--inside">Now Playing</a>
-                    </li>
-
-                    <li class="menu_inside">
-                        <a href="#" class="menu_link menu_link--inside">Upcoming</a>
-                    </li>
-
-                    <li class="menu_inside">
-                        <a href="#" class="menu_link menu_link--inside">Top Rated</a>
-                    </li>
-                </ul>-->
-            <!-- </li>
-
-            <li class="nav-item">
-              <a href="#" class="nav-link4">Serie</a>
-            </li> -->
-          </ul>
+          <ul></ul>
         </div>
         <a class="nav-burger">
           <img src="images/burger.png" alt="nav_icon" class="nav_images"
         /></a>
-        <!-- <a href="#" class="nav-close">
-          <img src="images/close.png" alt="nav_icon_close"
-        /></a> -->
       </nav>
     </header>
 
@@ -140,9 +105,22 @@
         </div>
         <div class="main_container" id="main_container"></div>
 
-        <div class="btns">
-          <button id="back-button">back</button>
-          <button id="next-button">next</button>
+        <div class="pagination-container">
+          <button id="back-button" class="pagination-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M15 18l-6-6 6-6"/>
+            </svg>
+            Back
+          </button>
+
+          <div class="page-numbers" id="page-numbers"></div>
+
+          <button id="next-button" class="pagination-btn">
+            Next
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 18l6-6-6-6"/>
+            </svg>
+          </button>
         </div>
       </div>
     </main>
